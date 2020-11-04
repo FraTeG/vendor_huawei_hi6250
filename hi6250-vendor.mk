@@ -32,3 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/hi6250/proprietary/vendor/lib64/libpowergenie_native3.so:system/vendor/lib64/libpowergenie_native3.so \
     vendor/huawei/hi6250/proprietary/vendor/lib64/libshim_libui.so:system/vendor/lib64/libshim_libui.so \
     vendor/huawei/hi6250/proprietary/vendor/lib64/libxml2.so:system/vendor/lib64/libxml2.so
+
+PRODUCT_PACKAGES += \
+    Mapcon \
+    gnss_supl20service_hisi

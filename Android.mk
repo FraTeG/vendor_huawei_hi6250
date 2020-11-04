@@ -18,4 +18,28 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),hi6250)
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := Mapcon
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := proprietary/vendor/app/Mapcon/Mapcon.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := gnss_supl20service_hisi
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := proprietary/vendor/app/gnss_supl20service_hisi/gnss_supl20service_hisi.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
 endif
